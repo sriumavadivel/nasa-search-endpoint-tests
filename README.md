@@ -50,6 +50,10 @@ The test plan is designed to validate the REST endpoint GET [https://images-api.
 The complete test cases for NASA Search Endpoints are listed as part of 
 [doc/NASA_Search_API_Test_Plan.pdf](https://github.com/sriumavadivel/nasa-search-endpoint-tests/blob/main/doc/NASA_Search_API_Test_Plan.pdf)
 
+## Automation RestAssured Test Framework
+
+![Automation Framework] (doc/NASA_Search_Endpoint_TestFramework.png)
+
 ## Automation Testing
 
 Automation test cases were added for the following functional scenarios.
