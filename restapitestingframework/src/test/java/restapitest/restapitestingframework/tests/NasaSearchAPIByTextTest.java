@@ -34,7 +34,6 @@ public class NasaSearchAPIByTextTest {
 		//Send a request to server and get response
 		response = httpRequest.get();
 		responseBody = response.getBody().asString();
-		System.out.println("Response Body: " + responseBody); 
 		
 		//verify status code
 		Assert.assertEquals(response.getStatusCode(), 200);	
@@ -51,16 +50,16 @@ public class NasaSearchAPIByTextTest {
 		Assert.assertNotNull(response.path("collection.metadata"));
 				
 		//verify collection items size
-		Assert.assertEquals(response.path("collection.items.size"), 100);
+		Assert.assertEquals(((Integer) response.path("collection.items.size")).intValue(), 100);
 		
 		//verify collection items href is not null
 		Assert.assertNotNull(response.path("collection.items.href"));
 		
 		//verify collection items links return 100 records
-		Assert.assertEquals(response.path("collection.items.links.size"), 100);
+		Assert.assertEquals(((Integer) response.path("collection.items.links.size")).intValue(), 100);
 		
 		//verify collection items data returns 100 records
-		Assert.assertEquals(response.path("collection.items.data.size"), 100);	
+		Assert.assertEquals(((Integer) response.path("collection.items.data.size")).intValue(), 100);
 		
 		//verify pagination
 		String expectedPaginationUrl = "https://images-api.nasa.gov/search?q=apollo&page=2";
@@ -79,7 +78,6 @@ public class NasaSearchAPIByTextTest {
 		//Send a request to server and get response
 		response = httpRequest.get();
 		responseBody = response.getBody().asString();
-		System.out.println("Response Body: " + responseBody); 
 		
 		//verify status code
 		Assert.assertEquals(response.getStatusCode(), 200);	
@@ -101,7 +99,6 @@ public class NasaSearchAPIByTextTest {
 		//Send a request to server and get response
 		response = httpRequest.get();
 		responseBody = response.getBody().asString();
-		System.out.println("Response Body: " + responseBody); 
 		
 		//verify status code
 		Assert.assertEquals(response.getStatusCode(), 200);	
@@ -121,12 +118,11 @@ public class NasaSearchAPIByTextTest {
 		//Send a request to server and get response
 		response = httpRequest.get();
 		responseBody = response.getBody().asString();
-		System.out.println("Response Body: " + responseBody); 
 		
 		//verify status code
 		Assert.assertEquals(response.getStatusCode(), 200);	
 		//verify collection items size
-		Assert.assertEquals(response.path("collection.items.size"), 0);
+		Assert.assertEquals(((Integer) response.path("collection.items.size")).intValue(), 0);
 		
 		//verify collection has href
 		String expectedUrl = "https://images-api.nasa.gov/search?q=apollo123";
@@ -144,7 +140,6 @@ public class NasaSearchAPIByTextTest {
 		//Send a request to server and get response
 		response = httpRequest.get();
 		responseBody = response.getBody().asString();
-		System.out.println("Response Body: " + responseBody); 
 		Assert.assertEquals(response.getStatusCode(), 400);	
 		Assert.assertEquals(response.path("reason"), "Expected 'q' text search parameter or other keywords.");		
 	}
@@ -159,7 +154,6 @@ public class NasaSearchAPIByTextTest {
 		//Send a request to server and get response
 		response = httpRequest.get();
 		responseBody = response.getBody().asString();
-		System.out.println("Response Body: " + responseBody); 
 		Assert.assertEquals(response.getStatusCode(), 400);	
 		Assert.assertEquals(response.path("reason"), "Expected 'q' text search parameter or other keywords.");
 	}

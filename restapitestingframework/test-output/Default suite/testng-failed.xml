@@ -6,10 +6,8 @@
       <class name="restapitest.restapitestingframework.tests.NasaSearchByMediaTypeTest">
         <methods>
           <include name="searchWithNull"/>
-          <include name="searchWithValidTextInMixedcase"/>
           <include name="setup"/>
           <include name="searchWithEmptyString"/>
-          <include name="searchWithValidTextInUppercase"/>
         </methods>
       </class> <!-- restapitest.restapitestingframework.tests.NasaSearchByMediaTypeTest -->
     </classes>
