@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="NASA RestAPI test">
+	<test name="testing NASA Search API">
+        <classes>
+            <class name="restapitest.restapitestingframework.tests.NasaSearchAPIByTextTest"> </class>
+            <class name="restapitest.restapitestingframework.tests.NasaSearchByMediaTypeTest"> </class>
+            <class name="restapitest.restapitestingframework.tests.NasaSearchAPIByDateTest"> </class>     
+       </classes>
+    </test>
+</suite>

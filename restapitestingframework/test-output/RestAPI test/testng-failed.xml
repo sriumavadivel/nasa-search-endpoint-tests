@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [RestAPI test]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="testing NASA Search API(failed)">
+    <classes>
+      <class name="restapitest.restapitestingframework.tests.NasaSearchByMediaTypeTest">
+        <methods>
+          <include name="searchWithNull"/>
+          <include name="setup"/>
+          <include name="searchWithEmptyString"/>
+        </methods>
+      </class> <!-- restapitest.restapitestingframework.tests.NasaSearchByMediaTypeTest -->
+    </classes>
+  </test> <!-- testing NASA Search API(failed) -->
+</suite> <!-- Failed suite [RestAPI test] -->
