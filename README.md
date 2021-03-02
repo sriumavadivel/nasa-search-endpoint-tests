@@ -1,10 +1,18 @@
 NASA Search EndPoint Tests
 =======================
 
-1. [Objective](#Objective)
-2. [Scope](#Scope)
-3. 
-
+- [Objective](#objective)
+- [Scope](#scope)
+- [Test Strategy](#test-strategy)
+  * [REST EndPoints](#rest-endpoints)
+  * [Functional Testing](#functional-testing)
+  * [Test Cases](#test-cases)
+  * [Automation Testing](#automation-testing)
+  * [Performance Testing](#performance-testing)
+  * [Security Testing](#security-testing)
+- [Issues found / ambiguities](#issues-found---ambiguities)
+- [Test Environment](#test-environment)
+- [Future enhancements to automation framework](#future-enhancements-to-automation-framework)
 
 # Objective
 
@@ -38,6 +46,9 @@ The test plan is designed to validate the REST endpoint GET [https://images-api.
 ## Functional Testing
 
 ## Test Cases
+
+The complete test cases for NASA Search Endpoints are listed as part of 
+[doc/NASA_Search_API_Test_Plan.pdf](https://github.com/sriumavadivel/nasa-search-endpoint-tests/blob/main/doc/NASA_Search_API_Test_Plan.pdf)
 
 ## Automation Testing
 
@@ -189,11 +200,11 @@ Hitting endpoint  [https://images-api.nasa.gov/search?q=mars&media_type=video&ye
 ```
 # Test Environment
 
-| Automation Testing |  Automation framework built with Java, TestNG, Maven, RestAssured |
-| Manual Testing |  Postman |
-| Performance Testing |  jmeter |
+__Automation Testing:__  Automation framework built with Java, TestNG, Maven, RestAssured 
+__Manual Testing:__   Postman 
+__Performance Testing:__  jmeter
 
-# Future enhancements to automation framework:
+# Future enhancements to automation framework
 
 1.  Add utility to verify the broken links
     
