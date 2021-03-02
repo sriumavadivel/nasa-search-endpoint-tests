@@ -117,7 +117,15 @@ Access-Control-Allow-Headers: Origin,Content-Type,Accept,Authorization,X-Request
 Access-Control-Allow-Methods:GET
 ```
 3.  SQL injection and verify the response
-    
+ 
+
+## Test Results
+
+* __HTML Report:__
+ https://sriumavadivel.github.io/nasa-search-endpoint-tests/restapitestingframework/test-output/
+
+* __Test Run Recording:__ https://github.com/sriumavadivel/nasa-search-endpoint-tests/blob/main/doc/NasaAPITesting_TestRun.mp4
+
 
 # Issues found / ambiguities
 
