@@ -37,11 +37,11 @@ The test plan is designed to validate the REST endpoint GET [https://images-api.
     
 4.  GET [https://images-api.nasa.gov/search](https://images-api.nasa.gov/search)?media_type=<audio|image|video>
     
-5.  GET [https://images-api.nasa.gov/search](https://images-api.nasa.gov/search)?q=<text>&year_start=<year between 1921 to 2021>
+5.  GET [https://images-api.nasa.gov/search](https://images-api.nasa.gov/search)?q=<text>\&year_start=<year between 1921 to 2021>
     
-6.  GET [https://images-api.nasa.gov/search](https://images-api.nasa.gov/search)?q=<text>&year_end=<year between 1921 to 2021>
+6.  GET [https://images-api.nasa.gov/search](https://images-api.nasa.gov/search)?q=<text>\&year_end=<year between 1921 to 2021>
     
-7.  GET [https://images-api.nasa.gov/search](https://images-api.nasa.gov/search)?q=<text>&media_type=<media>&start_year=<date>end_year=<date>
+7.  GET [https://images-api.nasa.gov/search](https://images-api.nasa.gov/search)?q=<text>\&media_type=<media>\&start_year=<date>end_year=<date>
     
 
 ## Functional Testing
