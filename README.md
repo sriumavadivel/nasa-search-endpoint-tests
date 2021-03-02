@@ -11,6 +11,7 @@ NASA Search EndPoint Tests
   * [Automation Testing](#automation-testing)
   * [Performance Testing](#performance-testing)
   * [Security Testing](#security-testing)
+- [Test Results](#Test-Results)
 - [Issues found / ambiguities](#issues-found---ambiguities)
 - [Test Environment](#test-environment)
 - [Future enhancements to automation framework](#future-enhancements-to-automation-framework)
