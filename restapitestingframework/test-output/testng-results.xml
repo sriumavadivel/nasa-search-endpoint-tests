@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="16" passed="14" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-03-01T19:08:15 PST" name="RestAPI test" finished-at="2021-03-01T19:08:24 PST" duration-ms="8946">
+  <suite started-at="2021-03-02T09:24:37 PST" name="NASA RestAPI test" finished-at="2021-03-02T09:24:44 PST" duration-ms="6882">
     <groups>
     </groups>
-    <test started-at="2021-03-01T19:08:15 PST" name="testing NASA Search API" finished-at="2021-03-01T19:08:24 PST" duration-ms="8946">
+    <test started-at="2021-03-02T09:24:37 PST" name="testing NASA Search API" finished-at="2021-03-02T09:24:44 PST" duration-ms="6882">
       <class name="restapitest.restapitestingframework.tests.NasaSearchByMediaTypeTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:restapitest.restapitestingframework.tests.NasaSearchByMediaTypeTest@b62fe6d]" started-at="2021-03-01T19:08:21 PST" name="setup" finished-at="2021-03-01T19:08:21 PST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:restapitest.restapitestingframework.tests.NasaSearchByMediaTypeTest@b62fe6d]" started-at="2021-03-02T09:24:42 PST" name="setup" finished-at="2021-03-02T09:24:42 PST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="searchWithEmptyString()[pri:0, instance:restapitest.restapitestingframework.tests.NasaSearchByMediaTypeTest@b62fe6d]" started-at="2021-03-01T19:08:21 PST" name="searchWithEmptyString" description="search text is empty string" finished-at="2021-03-01T19:08:21 PST" duration-ms="211" status="FAIL">
+        <test-method signature="searchWithEmptyString()[pri:0, instance:restapitest.restapitestingframework.tests.NasaSearchByMediaTypeTest@b62fe6d]" started-at="2021-03-02T09:24:42 PST" name="searchWithEmptyString" description="media type is empty string" finished-at="2021-03-02T09:24:42 PST" duration-ms="203" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [400] but found [200]]]>
@@ -24,7 +24,7 @@ at org.testng.Assert.assertEqualsImpl(Assert.java:140)
 at org.testng.Assert.assertEquals(Assert.java:122)
 at org.testng.Assert.assertEquals(Assert.java:907)
 at org.testng.Assert.assertEquals(Assert.java:917)
-at restapitest.restapitestingframework.tests.NasaSearchByMediaTypeTest.searchWithEmptyString(NasaSearchByMediaTypeTest.java:160)
+at restapitest.restapitestingframework.tests.NasaSearchByMediaTypeTest.searchWithEmptyString(NasaSearchByMediaTypeTest.java:159)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -59,11 +59,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchWithEmptyString -->
-        <test-method signature="searchWithInvalidyString()[pri:0, instance:restapitest.restapitestingframework.tests.NasaSearchByMediaTypeTest@b62fe6d]" started-at="2021-03-01T19:08:21 PST" name="searchWithInvalidyString" description="search by invalid text" finished-at="2021-03-01T19:08:21 PST" duration-ms="209" status="PASS">
+        <test-method signature="searchWithInvalidyString()[pri:0, instance:restapitest.restapitestingframework.tests.NasaSearchByMediaTypeTest@b62fe6d]" started-at="2021-03-02T09:24:42 PST" name="searchWithInvalidyString" description="search by invalid media type" finished-at="2021-03-02T09:24:42 PST" duration-ms="182" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchWithInvalidyString -->
-        <test-method signature="searchWithNull()[pri:0, instance:restapitest.restapitestingframework.tests.NasaSearchByMediaTypeTest@b62fe6d]" started-at="2021-03-01T19:08:21 PST" name="searchWithNull" description="search text is null" finished-at="2021-03-01T19:08:21 PST" duration-ms="196" status="FAIL">
+        <test-method signature="searchWithNull()[pri:0, instance:restapitest.restapitestingframework.tests.NasaSearchByMediaTypeTest@b62fe6d]" started-at="2021-03-02T09:24:42 PST" name="searchWithNull" description="media type is null" finished-at="2021-03-02T09:24:42 PST" duration-ms="177" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [400] but found [200]]]>
@@ -76,7 +76,7 @@ at org.testng.Assert.assertEqualsImpl(Assert.java:140)
 at org.testng.Assert.assertEquals(Assert.java:122)
 at org.testng.Assert.assertEquals(Assert.java:907)
 at org.testng.Assert.assertEquals(Assert.java:917)
-at restapitest.restapitestingframework.tests.NasaSearchByMediaTypeTest.searchWithNull(NasaSearchByMediaTypeTest.java:146)
+at restapitest.restapitestingframework.tests.NasaSearchByMediaTypeTest.searchWithNull(NasaSearchByMediaTypeTest.java:145)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -111,71 +111,71 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchWithNull -->
-        <test-method signature="searchWithValidTextInLowercase()[pri:0, instance:restapitest.restapitestingframework.tests.NasaSearchByMediaTypeTest@b62fe6d]" started-at="2021-03-01T19:08:21 PST" name="searchWithValidTextInLowercase" description="happy path - search by valid media type in lowercase " finished-at="2021-03-01T19:08:22 PST" duration-ms="337" status="PASS">
+        <test-method signature="searchWithValidTextInLowercase()[pri:0, instance:restapitest.restapitestingframework.tests.NasaSearchByMediaTypeTest@b62fe6d]" started-at="2021-03-02T09:24:42 PST" name="searchWithValidTextInLowercase" description="happy path - search by valid media type in lowercase" finished-at="2021-03-02T09:24:42 PST" duration-ms="353" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchWithValidTextInLowercase -->
-        <test-method signature="searchWithValidTextInMixedcase()[pri:0, instance:restapitest.restapitestingframework.tests.NasaSearchByMediaTypeTest@b62fe6d]" started-at="2021-03-01T19:08:22 PST" name="searchWithValidTextInMixedcase" description="happy path - search by valid media type in mixedcase" finished-at="2021-03-01T19:08:22 PST" duration-ms="338" status="PASS">
+        <test-method signature="searchWithValidTextInMixedcase()[pri:0, instance:restapitest.restapitestingframework.tests.NasaSearchByMediaTypeTest@b62fe6d]" started-at="2021-03-02T09:24:42 PST" name="searchWithValidTextInMixedcase" description="happy path - search by valid media type in mixedcase" finished-at="2021-03-02T09:24:43 PST" duration-ms="366" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchWithValidTextInMixedcase -->
-        <test-method signature="searchWithValidTextInUppercase()[pri:0, instance:restapitest.restapitestingframework.tests.NasaSearchByMediaTypeTest@b62fe6d]" started-at="2021-03-01T19:08:22 PST" name="searchWithValidTextInUppercase" description="happy path - search by valid media type in uppercase" finished-at="2021-03-01T19:08:23 PST" duration-ms="493" status="PASS">
+        <test-method signature="searchWithValidTextInUppercase()[pri:0, instance:restapitest.restapitestingframework.tests.NasaSearchByMediaTypeTest@b62fe6d]" started-at="2021-03-02T09:24:43 PST" name="searchWithValidTextInUppercase" description="happy path - search by valid media type in uppercase" finished-at="2021-03-02T09:24:43 PST" duration-ms="205" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchWithValidTextInUppercase -->
       </class> <!-- restapitest.restapitestingframework.tests.NasaSearchByMediaTypeTest -->
       <class name="restapitest.restapitestingframework.tests.NasaSearchAPIByDateTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:restapitest.restapitestingframework.tests.NasaSearchAPIByDateTest@13acb0d1]" started-at="2021-03-01T19:08:23 PST" name="setup" finished-at="2021-03-01T19:08:23 PST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:restapitest.restapitestingframework.tests.NasaSearchAPIByDateTest@13acb0d1]" started-at="2021-03-02T09:24:43 PST" name="setup" finished-at="2021-03-02T09:24:43 PST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="searchWithInvalidEndYear()[pri:0, instance:restapitest.restapitestingframework.tests.NasaSearchAPIByDateTest@13acb0d1]" started-at="2021-03-01T19:08:23 PST" name="searchWithInvalidEndYear" description="test for optional parameters combinations and year_end is invalid" finished-at="2021-03-01T19:08:23 PST" duration-ms="193" status="PASS">
+        <test-method signature="searchWithInvalidEndYear()[pri:0, instance:restapitest.restapitestingframework.tests.NasaSearchAPIByDateTest@13acb0d1]" started-at="2021-03-02T09:24:43 PST" name="searchWithInvalidEndYear" description="test for optional parameters combinations and year_end is invalid" finished-at="2021-03-02T09:24:43 PST" duration-ms="180" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchWithInvalidEndYear -->
-        <test-method signature="searchWithInvalidStartYear()[pri:0, instance:restapitest.restapitestingframework.tests.NasaSearchAPIByDateTest@13acb0d1]" started-at="2021-03-01T19:08:23 PST" name="searchWithInvalidStartYear" description="test for optional parameters combinations and year_start is invalid" finished-at="2021-03-01T19:08:23 PST" duration-ms="424" status="PASS">
+        <test-method signature="searchWithInvalidStartYear()[pri:0, instance:restapitest.restapitestingframework.tests.NasaSearchAPIByDateTest@13acb0d1]" started-at="2021-03-02T09:24:43 PST" name="searchWithInvalidStartYear" description="test for optional parameters combinations and year_start is invalid" finished-at="2021-03-02T09:24:43 PST" duration-ms="174" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchWithInvalidStartYear -->
-        <test-method signature="searchWithOptionalParameters()[pri:0, instance:restapitest.restapitestingframework.tests.NasaSearchAPIByDateTest@13acb0d1]" started-at="2021-03-01T19:08:23 PST" name="searchWithOptionalParameters" description="happy path - test for optional parameters combinations" finished-at="2021-03-01T19:08:23 PST" duration-ms="239" status="PASS">
+        <test-method signature="searchWithOptionalParameters()[pri:0, instance:restapitest.restapitestingframework.tests.NasaSearchAPIByDateTest@13acb0d1]" started-at="2021-03-02T09:24:43 PST" name="searchWithOptionalParameters" description="happy path - test for optional parameters combinations" finished-at="2021-03-02T09:24:44 PST" duration-ms="182" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchWithOptionalParameters -->
-        <test-method signature="searchWithStartYearInFuture()[pri:0, instance:restapitest.restapitestingframework.tests.NasaSearchAPIByDateTest@13acb0d1]" started-at="2021-03-01T19:08:23 PST" name="searchWithStartYearInFuture" description="test for optional parameters combinations and year_end is invalid" finished-at="2021-03-01T19:08:24 PST" duration-ms="208" status="PASS">
+        <test-method signature="searchWithStartYearInFuture()[pri:0, instance:restapitest.restapitestingframework.tests.NasaSearchAPIByDateTest@13acb0d1]" started-at="2021-03-02T09:24:44 PST" name="searchWithStartYearInFuture" description="test for optional parameters combinations and year_start is in future" finished-at="2021-03-02T09:24:44 PST" duration-ms="192" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchWithStartYearInFuture -->
       </class> <!-- restapitest.restapitestingframework.tests.NasaSearchAPIByDateTest -->
       <class name="restapitest.restapitestingframework.tests.NasaSearchAPIByTextTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:restapitest.restapitestingframework.tests.NasaSearchAPIByTextTest@3c153a1]" started-at="2021-03-01T19:08:15 PST" name="setup" finished-at="2021-03-01T19:08:15 PST" duration-ms="533" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:restapitest.restapitestingframework.tests.NasaSearchAPIByTextTest@3c153a1]" started-at="2021-03-02T09:24:37 PST" name="setup" finished-at="2021-03-02T09:24:37 PST" duration-ms="414" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="searchWithEmptyString()[pri:0, instance:restapitest.restapitestingframework.tests.NasaSearchAPIByTextTest@3c153a1]" started-at="2021-03-01T19:08:15 PST" name="searchWithEmptyString" description="search text is empty string" finished-at="2021-03-01T19:08:17 PST" duration-ms="1840" status="PASS">
+        <test-method signature="searchWithEmptyString()[pri:0, instance:restapitest.restapitestingframework.tests.NasaSearchAPIByTextTest@3c153a1]" started-at="2021-03-02T09:24:37 PST" name="searchWithEmptyString" description="search text is empty string" finished-at="2021-03-02T09:24:39 PST" duration-ms="1362" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchWithEmptyString -->
-        <test-method signature="searchWithInvalidyString()[pri:0, instance:restapitest.restapitestingframework.tests.NasaSearchAPIByTextTest@3c153a1]" started-at="2021-03-01T19:08:17 PST" name="searchWithInvalidyString" description="search by invalid text" finished-at="2021-03-01T19:08:17 PST" duration-ms="390" status="PASS">
+        <test-method signature="searchWithInvalidyString()[pri:0, instance:restapitest.restapitestingframework.tests.NasaSearchAPIByTextTest@3c153a1]" started-at="2021-03-02T09:24:39 PST" name="searchWithInvalidyString" description="search by invalid text" finished-at="2021-03-02T09:24:39 PST" duration-ms="371" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchWithInvalidyString -->
-        <test-method signature="searchWithNull()[pri:0, instance:restapitest.restapitestingframework.tests.NasaSearchAPIByTextTest@3c153a1]" started-at="2021-03-01T19:08:17 PST" name="searchWithNull" description="search text is null" finished-at="2021-03-01T19:08:18 PST" duration-ms="395" status="PASS">
+        <test-method signature="searchWithNull()[pri:0, instance:restapitest.restapitestingframework.tests.NasaSearchAPIByTextTest@3c153a1]" started-at="2021-03-02T09:24:39 PST" name="searchWithNull" description="search text is null" finished-at="2021-03-02T09:24:40 PST" duration-ms="505" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchWithNull -->
-        <test-method signature="searchWithValidTextInLowercase()[pri:0, instance:restapitest.restapitestingframework.tests.NasaSearchAPIByTextTest@3c153a1]" started-at="2021-03-01T19:08:18 PST" name="searchWithValidTextInLowercase" description="happy path - search by valid text in lowercase " finished-at="2021-03-01T19:08:19 PST" duration-ms="1530" status="PASS">
+        <test-method signature="searchWithValidTextInLowercase()[pri:0, instance:restapitest.restapitestingframework.tests.NasaSearchAPIByTextTest@3c153a1]" started-at="2021-03-02T09:24:40 PST" name="searchWithValidTextInLowercase" description="happy path - search by valid text in lowercase " finished-at="2021-03-02T09:24:41 PST" duration-ms="1030" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchWithValidTextInLowercase -->
-        <test-method signature="searchWithValidTextInMixedcase()[pri:0, instance:restapitest.restapitestingframework.tests.NasaSearchAPIByTextTest@3c153a1]" started-at="2021-03-01T19:08:19 PST" name="searchWithValidTextInMixedcase" description="happy path - search by valid text in mixedcase" finished-at="2021-03-01T19:08:20 PST" duration-ms="614" status="PASS">
+        <test-method signature="searchWithValidTextInMixedcase()[pri:0, instance:restapitest.restapitestingframework.tests.NasaSearchAPIByTextTest@3c153a1]" started-at="2021-03-02T09:24:41 PST" name="searchWithValidTextInMixedcase" description="happy path - search by valid text in mixedcase" finished-at="2021-03-02T09:24:41 PST" duration-ms="282" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchWithValidTextInMixedcase -->
-        <test-method signature="searchWithValidTextInUppercase()[pri:0, instance:restapitest.restapitestingframework.tests.NasaSearchAPIByTextTest@3c153a1]" started-at="2021-03-01T19:08:20 PST" name="searchWithValidTextInUppercase" description="happy path - search by valid text in uppercase" finished-at="2021-03-01T19:08:21 PST" duration-ms="754" status="PASS">
+        <test-method signature="searchWithValidTextInUppercase()[pri:0, instance:restapitest.restapitestingframework.tests.NasaSearchAPIByTextTest@3c153a1]" started-at="2021-03-02T09:24:41 PST" name="searchWithValidTextInUppercase" description="happy path - search by valid text in uppercase" finished-at="2021-03-02T09:24:42 PST" duration-ms="665" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchWithValidTextInUppercase -->
       </class> <!-- restapitest.restapitestingframework.tests.NasaSearchAPIByTextTest -->
     </test> <!-- testing NASA Search API -->
-  </suite> <!-- RestAPI test -->
+  </suite> <!-- NASA RestAPI test -->
 </testng-results>

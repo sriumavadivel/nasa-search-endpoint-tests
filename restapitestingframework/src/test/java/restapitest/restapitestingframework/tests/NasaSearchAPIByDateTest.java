@@ -109,7 +109,6 @@ public class NasaSearchAPIByDateTest {
 		Assert.assertEquals(response.getStatusCode(), 200);			
 		
 		//verify collection items size
-		Assert.assertEquals(response.path("collection.items.size"), 0);
-				
+		Assert.assertEquals(((Integer) response.path("collection.items.size")).intValue(), 0);
 	}
 }

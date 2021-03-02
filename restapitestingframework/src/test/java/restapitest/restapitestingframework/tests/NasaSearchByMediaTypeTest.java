@@ -51,17 +51,16 @@ public class NasaSearchByMediaTypeTest {
 		Assert.assertNotNull(response.path("collection.metadata"));
 				
 		//verify collection items size
-		Assert.assertEquals(response.path("collection.items.size"), 100);
+		Assert.assertEquals(((Integer) response.path("collection.items.size")).intValue(), 100);
 		
 		//verify collection items href is not null
 		Assert.assertNotNull(response.path("collection.items.href"));
 		
 		//verify collection items links return 100 records
-		Assert.assertEquals(response.path("collection.items.links.size"), 100);
+		Assert.assertEquals(((Integer) response.path("collection.items.links.size")).intValue(), 100);
 		
 		//verify collection items data returns 100 records
-		Assert.assertEquals(response.path("collection.items.data.size"), 100);	
-						
+		Assert.assertEquals(((Integer) response.path("collection.items.data.size")).intValue(), 100);					
 	}
 	
 	@Test(enabled=true, description="happy path - search by valid media type in uppercase")
@@ -124,7 +123,7 @@ public class NasaSearchByMediaTypeTest {
 		Assert.assertEquals(response.getStatusCode(), 200);	
 		
 		//verify collection items size
-		Assert.assertEquals(response.path("collection.items.size"), 0);
+		Assert.assertEquals(((Integer) response.path("collection.items.size")).intValue(), 0);
 		
 		//verify collection has href
 		String expectedUrl = "https://images-api.nasa.gov/search?media_type=image123";
