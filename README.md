@@ -7,7 +7,7 @@ NASA Search EndPoint Tests
   * [REST EndPoints](#rest-endpoints)
   * [Functional Testing](#functional-testing)
   * [Test Cases](#test-cases)
-  * [Automation RestAssured Test Framework](#Automation RestAssured Test Framework)
+  * [Automation RestAssured Test Framework](#Automation-RestAssured-Test-Framework)
   * [Automation Testing](#automation-testing)
   * [Performance Testing](#performance-testing)
   * [Security Testing](#security-testing)
@@ -53,7 +53,7 @@ The complete test cases for NASA Search Endpoints are listed as part of
 
 ## Automation RestAssured Test Framework
 
-![Automation Framework](doc/NASA_Search_Endpoint_TestFramework.jpg)
+![Automation Framework](doc/NASA_Search_Endpoint_TestFramework.jpg =100x20)
 
 ## Automation Testing
 
