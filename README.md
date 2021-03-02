@@ -7,6 +7,7 @@ NASA Search EndPoint Tests
   * [REST EndPoints](#rest-endpoints)
   * [Functional Testing](#functional-testing)
   * [Test Cases](#test-cases)
+  * [Automation RestAssured Test Framework](#Automation RestAssured Test Framework)
   * [Automation Testing](#automation-testing)
   * [Performance Testing](#performance-testing)
   * [Security Testing](#security-testing)
