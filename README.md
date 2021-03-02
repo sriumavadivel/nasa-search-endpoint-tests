@@ -52,7 +52,7 @@ The complete test cases for NASA Search Endpoints are listed as part of
 
 ## Automation RestAssured Test Framework
 
-![Automation Framework] (doc/NASA_Search_Endpoint_TestFramework.jpg)
+![Automation Framework](doc/NASA_Search_Endpoint_TestFramework.jpg)
 
 ## Automation Testing
 
